@@ -1,0 +1,116 @@
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;/* this makes sure our html takes up 100% of the browser window */
+    font-size: 100%;
+}
+
+body {
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: white;
+    min-height: 100%; /* sets the height of the body to 100% of the browser */
+    padding-bottom: 200px;
+}
+
+.navbar {
+    position: relative;
+    padding: 0.5rem;
+    background-color: black;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 10px 5px #404040;
+    text-align: center;
+}
+
+.navbar .my-picture { /* called a descendant selector */
+    position: absolute;
+    left: 3rem;
+    cursor: pointer; /* produces the finger-pointer icon when you hover over */
+    margin-top: -55px;
+    border: 5px solid white;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.navbar img {
+  height: 180px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+.navbar .home-title {
+  color: white;
+  margin-left: 180px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar .links-container {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    color: white;
+    width: 70%;
+    margin: 80px 20px 0px 0px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.links-container .navbar-link {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 20%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 12px;
+    vertical-align: middle;
+    color: white;
+    font-size: 0.625rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #009900;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px #003300;
+}
+
+/* Medium and small screens (640px) works well for smaller tablets and phones*/
+@media (min-width: 640px) {
+    html { font-size: 112%; }
+
+}
+
+/* Large screens (1024px) works well for both laptop and tablets*/
+@media (min-width: 1024px) {
+    html { font-size: 120%; }
+}
+
+/* clearing floats */
+
+.clearfix::before,
+.clearfix::after {
+   content: "";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
+}

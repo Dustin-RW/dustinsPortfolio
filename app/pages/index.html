@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <title>Dustin Waggoner (Portfolio)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
 </head>
 
 <body>
     <nav class="navbar">
         <!-- navigation bar -->
-        <a ui-sref="index" class="logo">
-            <img src="" alt="">
+        <h2 class="home-title">Dustin Waggoner - Aspiring Software Engineer</h2>
+        <a ui-sref="my-bio" class="my-picture">
+            <img src="/assets/images/Profile_pic.jpg" alt="profile-pic">
         </a>
         <div class="links-container">
-            <a ui-sref="collection" class="navbar-link"></a>
+            <a ui-sref="home" class="navbar-link">Home</a>
+            <a ui-sref="my-projects" class="navbar-link">My Projects</a>
+            <a ui-sref="about-me" class="navbar-link">About Me</a>
+            <a ui-sref="about-me" class="navbar-link">Contact</a>
         </div>
     </nav>
 

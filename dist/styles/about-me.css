@@ -1,13 +1,11 @@
 .about-content {
-  text-align: center;
+    text-align: center;
 }
-
 .about-content .feature-banner {
     padding: 6.818181818% 0;
     text-align: center;
     background: green;
 }
-
 .about-content h1 {
     color: #ccffcc;
     margin: 0 auto 10px auto;
@@ -15,8 +13,10 @@
     line-height: 1.4em;
     letter-spacing: -.003em;
     width: 66.66666667%;
-  }
-
+}
+.about-content h3 {
+  color: #ccffcc;
+}
 .about-content p {
     color: #fafae8;
     text-align: left;
@@ -26,4 +26,95 @@
     font-size: 22px;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -.015em;
+}
+.aboutme-image {
+    margin: 60px auto 0 auto;
+    width: 66.66666667%;
+}
+.aboutme-image img {
+    display: block;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 100%;
+}
+.about-content h2 {
+    -webkit-font-smoothing: antialiased;
+    font-family: "playfair display";
+    line-height: 1.2em;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: left;
+    margin: 60px auto;
+    width: 66.66666667%;
+}
+.about-content h2:after {
+    content: "";
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+}
+ul {
+    list-style: none;
+}
+.about-content .work-experience {
+    position: relative;
+    width: 66.66666667%;
+    margin: 0 auto 90px auto;
+}
+.about-content .work-experience:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 59px;
+}
+.about-content .work-experience:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    left: 52px;
+    border-radius: 100%;
+}
+.about-content .work-experience li {
+    margin: 0 auto 60px auto;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    padding-right: 20px;
+    border: hidden;
+    background-color: green;
+}
+.about-content .work-experience li .experience-dates {
+    background: black;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 1.5em;
+    width: 120px;
+    height: 120px;
+    font-size: 15px;
+    padding: 30px 15px;
+    color: white;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    margin: 5px 40px 0px 5px;
+}
+.about-content .work-experience li p {
+    width: 100%;
+}
+.about-content p.big {
+    font-size: 22px;
+    margin: 20px 0;
+}
+.about-content p.small {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 20px 0;
 }

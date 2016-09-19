@@ -25,7 +25,7 @@
         <!-- navigation bar -->
         <h2 class="nav-title">Dustin Waggoner - Aspiring Software Engineer</h2>
         <div class="links-container">
-            <a ui-sref="index" class="navbar-link" ng-click="changeHeader('Home')">{{ home }}</a>
+            <a ui-sref="index" class="navbar-link" ng-mouseover="hover = true" ng-mouseleave="hover = false" ng-click="changeHeader('Home')">{{ home }}</a>
             <a ui-sref="my-projects" class="navbar-link" ng-click="changeHeader('My Projects')">{{ myProjects }}</a>
             <a ui-sref="about-me" class="navbar-link" ng-click="changeHeader('About Me')">{{ aboutMe }}</a>
             <a ui-sref="contact" class="navbar-link" ng-click="changeHeader('Contact Info')">{{ contact }}</a>

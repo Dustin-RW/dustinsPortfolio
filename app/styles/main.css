@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+article nav footer main section {
+  display: block;
+}
+
 html body div h1 h2 h3 span p {
   margin: 0;
   padding: 0;
@@ -23,8 +27,11 @@ html {
 
 body {
     background-color: grey;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: green;
+    background: -webkit-linear-gradient(left, #D3D3D3 , #696969	); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #D3D3D3, #696969); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #D3D3D3, #696969); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #D3D3D3 , #696969); /* Standard syntax */
     background-size: cover;
     font-family: 'Open Sans';
     color: white;
@@ -114,22 +121,26 @@ article {
     box-shadow: 5px 10px 5px #003300;
 }
 
+.links-container .navbar-link:hover {
+  background-color: #23DD28;
+}
+
 .container {
     margin: 0 auto;
     max-width: 64rem;
 }
 
 /* Medium and small screens (640px) works well for smaller tablets and phones*/
-@media (min-width: 640px) {
+/*@media (min-width: 640px) {
     html { font-size: 112%; }
 
 
-}
+}*/
 
 /* Large screens (1024px) works well for both laptop and tablets*/
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     html { font-size: 120%; }
-}
+}*/
 
 /* clearing floats */
 

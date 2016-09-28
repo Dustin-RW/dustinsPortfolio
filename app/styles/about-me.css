@@ -37,6 +37,11 @@
 }
 .about-content h3 {
   color: #ccffcc;
+  font-size: 30px;
+}
+
+.about-content h3 a {
+  color: #ccffcc;
 }
 .about-content p {
     color: #fafae8;
@@ -129,7 +134,7 @@ ul {
     box-shadow: 5px 5px 5px #333333;
 }
 .about-content .work-experience li p {
-    width: 100%;
+    width: 80%;
 }
 .about-content p.big {
     font-size: 22px;
@@ -164,10 +169,12 @@ ul {
     border-radius: 20px;
     box-shadow: 5px 5px 5px green;
     display: inline-block;
+    font-size: 16px;
 }
 
 .education-history ul:hover {
   width: 100%;
+  font-size: 22px;
 }
 
 .education-history .date-item {
@@ -180,20 +187,25 @@ ul {
     font-weight: 900;
 }
 
-.education-history li {
-    -webkit-font-smoothing: antialiased;
-    background: #262626;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
+.education-history .education-title {
+    margin: 0 auto 0 auto;
     text-align: center;
-    z-index: 2;
-    line-height: 1.5em;
-    font-size: 16px;
+    font-style: normal;
+    display: block;
+    font-size: 20px;
+    font-family: "playfair display";
+    font-weight: 900;
+}
+
+.education-history li {
+    margin: 10px auto 10px auto;
+    padding: 0 auto;
+    width: 95%;
 }
 
 .hobby {
   padding: 6.818181818%;
+  margin-top: 15px;
 }
 
 .about-hobby {

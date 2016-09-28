@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article nav footer main section {
+  display: block;
+}
+
+html body div h1 h2 h3 span p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+    height: 100%;/* this makes sure our html takes up 100% of the browser window */
+    font-size: 100%;
+}
+
+body {
+    background-color: grey;
+    background: green;
+    background: -webkit-linear-gradient(left, #D3D3D3 , #696969	); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #D3D3D3, #696969); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #D3D3D3, #696969); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #D3D3D3 , #696969); /* Standard syntax */
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: white;
+    min-height: 100%; /* sets the height of the body to 100% of the browser */
+    padding-bottom: 200px;
+}
+
+article {
+  display: block;
+}
+
+.page-title {
+  position: relative;
+  font-style: italic;
+  text-decoration: underline;
+  letter-spacing: 1rem;
+  margin-left: 200px;
+}
+
+.navbar {
+    position: relative;
+    padding: 0.5rem;
+    background-color: black;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 10px 5px #404040;
+    margin-bottom: 100px;
+}
+
+.profile-picture { /* called a descendant selector */
+    position: absolute;
+    margin-left: 50px;
+    cursor: pointer; /* produces the finger-pointer icon when you hover over */
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 5px;
+    z-index: 2;
+    clear: both;
+    margin-top: -40px;
+}
+
+
+.navbar .nav-title {
+  color: white;
+  margin-left: 180px;
+  font-size: 150%;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar .links-container {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    color: white;
+    width: 70%;
+    margin: 80px 20px 0px 0px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.links-container .navbar-link {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 20%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 12px;
+    vertical-align: middle;
+    color: white;
+    font-size: 0.625rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #009900;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px #003300;
+}
+
+.links-container .navbar-link:hover {
+  background-color: #23DD28;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+/* Medium and small screens (640px) works well for smaller tablets and phones*/
+/*@media (min-width: 640px) {
+    html { font-size: 112%; }
+
+
+}*/
+
+/* Large screens (1024px) works well for both laptop and tablets*/
+/*@media (min-width: 1024px) {
+    html { font-size: 120%; }
+}*/
+
+/* clearing floats */
+
+.clearfix::before,
+.clearfix::after {
+   content: "";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
+}

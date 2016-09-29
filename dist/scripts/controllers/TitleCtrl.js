@@ -4,7 +4,7 @@
     $scope.home = "Home";
     $scope.aboutMe = "About Me";
     $scope.myProjects = "My Projects";
-    $scope.contact = "Contact Info";
+    $scope.contact = "Contact Me";
     $scope.displayTitle = "Welcome";
 
     $scope.changeHeader = function(name) {

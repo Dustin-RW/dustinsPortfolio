@@ -15,7 +15,7 @@
                 controller: 'HomeCtrl as home'
             })
             .state('my-projects', {
-              url:'my-projects',
+              url:'/my-projects',
               templateUrl: '/templates/my-projects.html',
               contoller: 'ProjectsCtrl'
             })
@@ -25,7 +25,7 @@
               controller: 'AboutMeCtrl'
             })
             .state('contact', {
-              url: 'contact-info',
+              url: '/contact',
               templateUrl: 'templates/contact.html',
             });
       }

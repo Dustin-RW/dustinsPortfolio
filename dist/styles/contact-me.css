@@ -1,0 +1,16 @@
+.contact-content {
+  width: 100%;
+}
+
+.email-title {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+
+.contact-content .contact-board {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px;
+  background: #ECE5CE;
+}

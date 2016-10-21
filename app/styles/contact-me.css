@@ -1,0 +1,58 @@
+.contact-content {
+  width: 100%;
+}
+
+.email-title {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.email-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.contact-content .contact-board {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px;
+  background: #ECE5CE;
+  border-radius: 25px;
+  border:
+}
+
+.contact-board .ionic-icons {
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 10px 20px 5px;
+}
+
+.ionic-icons .ionic-image {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.ionic-icons #facebook-icon {
+  color: #00008B;
+}
+
+.ionic-icons #linkedin-icon {
+  color: #6495ED;
+}
+
+.ionic-icons #github-icon {
+  color: #000000;
+}
+
+.ionic-icons #instagram-icon {
+  color: #DC143C;
+}
+
+ul {
+  padding: 0;
+}
+
+.contact-board .icon-list {
+  padding: 20px;
+}

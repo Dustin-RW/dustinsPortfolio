@@ -5,42 +5,87 @@
     <meta charset="UTF-8">
     <title>Dustin Waggoner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/homepage.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/styles/homepage.css" />
     <link rel="stylesheet" type="text/css" href="/styles/about-me.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/contact-me.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/contact-me.css" /> -->
 
 
 </head>
 
 <body>
-    <section ng-controller="TitleCtrl">
-    <section class="tite-display .container">
-    <h1 class="page-title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ displayTitle }}</h1>
-    </section>
-    <a ui-sref="about-me" ng-click="changeHeader('About Me')">
-        <img src="/assets/images/Profile_pic.jpg" alt="profile-pic" class="profile-picture">
-    </a>
-    <nav class="navbar">
-        <!-- navigation bar -->
-        <h2 class="nav-title">Dustin Waggoner - Aspiring Software Engineer</h2>
-        <div class="links-container">
-            <a ui-sref="index" class="navbar-link" ng-mouseover="hover = true" ng-mouseleave="hover = false" ng-click="changeHeader('Home')">{{ home }}</a>
-            <a ui-sref="my-projects" class="navbar-link" ng-click="changeHeader('My Projects')">{{ myProjects }}</a>
-            <a ui-sref="about-me" class="navbar-link" ng-click="changeHeader('About Me')">{{ aboutMe }}</a>
-            <a ui-sref="contact" class="navbar-link" ng-click="changeHeader('Contact Me')">{{ contact }}</a>
+    <section ng-controller="TitleCtrl" class="header-content container-fluid">
+        <div class="row">
+            <a ui-sref="about-me" ng-click="changeHeader('About Me')" class="profile-pic-container col-md-4">
+                <img src="/assets/images/Profile_pic.jpg" alt="profile-pic" class="profile-picture img-responsive">
+            </a>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="title-display col-md-12">
+                        <h1 class="nav-title text-center">Dustin Waggoner - Aspiring Software Engineer</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="navbar col-md-8 col-md-offset-2">
+                      <div class="row text-center">
+                        <div class="link-container col-md-3 col-xs-6"><a ui-sref="index" class="navbar-link btn btn-default" ng-mouseover="hover = true" ng-mouseleave="hover = false" ng-click="changeHeader('Home')">{{ home }}</a></div>
+                        <div class="link-container col-md-3 col-xs-6"><a ui-sref="my-projects" class="navbar-link btn btn-default" ng-click="changeHeader('My Projects')">{{ myProjects }}</a></div>
+                        <div class="link-container col-md-3 col-xs-6"><a ui-sref="about-me" class="navbar-link btn btn-default" ng-click="changeHeader('About Me')">{{ aboutMe }}</a></div>
+                        <div class="link-container col-md-3 col-xs-6"><a ui-sref="contact" class="navbar-link btn btn-default" ng-click="changeHeader('Contact Me')">{{ contact }}</a></div>
+                      </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </nav>
     </section>
+
+
+
+
+
+
+    <!-- <div class="row col-md-12">
+        <a ui-sref="about-me" ng-click="changeHeader('About Me')" class="col-md-3">
+            <img src="/assets/images/Profile_pic.jpg" alt="profile-pic" class="profile-picture">
+        </a>
+        <div class="row col-md-9">
+          <section class="title-display">
+            <h1 class="page-title">{{ displayTitle }}</h1>
+          </section>
+        </div>
+        <div class="row col-md-9">
+          <nav class="navbar">
+              <h2 class="nav-title">Dustin Waggoner - Aspiring Software Engineer</h2>
+              <div class="links-container">
+                  <a ui-sref="index" class="navbar-link" ng-mouseover="hover = true" ng-mouseleave="hover = false" ng-click="changeHeader('Home')">{{ home }}</a>
+                  <a ui-sref="my-projects" class="navbar-link" ng-click="changeHeader('My Projects')">{{ myProjects }}</a>
+                  <a ui-sref="about-me" class="navbar-link" ng-click="changeHeader('About Me')">{{ aboutMe }}</a>
+                  <a ui-sref="contact" class="navbar-link" ng-click="changeHeader('Contact Me')">{{ contact }}</a>
+              </div>
+          </nav>
+        </div>
+      </div>
+    </section> -->
 
     <div ui-view></div>
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
     <!-- UI Router Source -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script> <!-- UI Router Source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <!-- UI Router Source -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/TitleCtrl.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>

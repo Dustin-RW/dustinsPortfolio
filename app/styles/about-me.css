@@ -2,7 +2,7 @@
     text-align: center;
 }
 .about-content .feature-banner {
-    padding: 6.818181818% 0;
+    padding: 6% 0;
     text-align: center;
     background: green;
     background: -webkit-linear-gradient(left, green , #80ff00	); /* For Safari 5.1 to 6.0 */
@@ -54,8 +54,7 @@
     letter-spacing: -.015em;
 }
 .aboutme-image {
-    margin: 60px auto 0 auto;
-    width: 66.66666667%;
+
 }
 .aboutme-image img {
     display: block;
@@ -237,4 +236,14 @@ ul {
 
 .about-hobby a .strong-even {
   color: #cccc00;
+}
+
+@media (max-width: 600px) {
+  .about-content h1 {
+    font-size: 150%;
+  }
+  .about-content p {
+    font-size: 16px;
+    width: 75%;
+  }
 }

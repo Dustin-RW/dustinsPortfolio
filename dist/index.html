@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html lang="en" ng-app="myApp">
 
 <head lang="en">
     <meta charset="UTF-8">
@@ -12,22 +12,22 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/styles/main.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="/styles/homepage.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/homepage.css" />
     <link rel="stylesheet" type="text/css" href="/styles/about-me.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/contact-me.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/styles/contact-me.css" />
 
 
 </head>
 
 <body>
-    <section ng-controller="TitleCtrl" class="header-content container-fluid">
+  <section ng-controller="TitleCtrl">
+    <section class="header-content container-fluid">
         <div class="row">
-            <a ui-sref="about-me" ng-click="changeHeader('About Me')" class="profile-pic-container col-md-4">
+            <a ui-sref="about-me" ng-click="changeHeader('About Me')" class="profile-pic-container col-md-3">
                 <img src="/assets/images/Profile_pic.jpg" alt="profile-pic" class="profile-picture img-responsive">
             </a>
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div class="row">
                     <div class="title-display col-md-12">
                         <h1 class="nav-title text-center">Dustin Waggoner - Aspiring Software Engineer</h1>
@@ -46,34 +46,7 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-    <!-- <div class="row col-md-12">
-        <a ui-sref="about-me" ng-click="changeHeader('About Me')" class="col-md-3">
-            <img src="/assets/images/Profile_pic.jpg" alt="profile-pic" class="profile-picture">
-        </a>
-        <div class="row col-md-9">
-          <section class="title-display">
-            <h1 class="page-title">{{ displayTitle }}</h1>
-          </section>
-        </div>
-        <div class="row col-md-9">
-          <nav class="navbar">
-              <h2 class="nav-title">Dustin Waggoner - Aspiring Software Engineer</h2>
-              <div class="links-container">
-                  <a ui-sref="index" class="navbar-link" ng-mouseover="hover = true" ng-mouseleave="hover = false" ng-click="changeHeader('Home')">{{ home }}</a>
-                  <a ui-sref="my-projects" class="navbar-link" ng-click="changeHeader('My Projects')">{{ myProjects }}</a>
-                  <a ui-sref="about-me" class="navbar-link" ng-click="changeHeader('About Me')">{{ aboutMe }}</a>
-                  <a ui-sref="contact" class="navbar-link" ng-click="changeHeader('Contact Me')">{{ contact }}</a>
-              </div>
-          </nav>
-        </div>
-      </div>
-    </section> -->
+  </section>
 
     <div ui-view></div>
 

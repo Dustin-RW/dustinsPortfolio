@@ -1,10 +1,10 @@
-.contact-content {
-  width: 100%;
-}
+/*.contact-content {
+
+}*/
 
 .email-title {
-  text-align: center;
   font-family: Verdana, Geneva, sans-serif;
+  margin-bottom: 20px;
 }
 
 .email-title a {
@@ -14,23 +14,19 @@
 
 
 .contact-content .contact-board {
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px;
   background: #ECE5CE;
   border-radius: 25px;
-  border:
+  box-shadow: 3px 3px darkgreen;
 }
 
 .contact-board .ionic-icons {
   font-size: 40px;
   text-align: center;
-  margin: 5px 10px 20px 5px;
+  padding-top: 5px;
 }
 
 .ionic-icons .ionic-image {
-  margin-left: 25px;
-  margin-right: 25px;
+
 }
 
 .ionic-icons #facebook-icon {
@@ -55,4 +51,16 @@ ul {
 
 .contact-board .icon-list {
   padding: 20px;
+}
+
+.icon-list p {
+  color: darkslategrey;
+}
+
+@media (max-width: 600px) {
+    .email-title {font-size: 150%;}
+}
+
+@media (max-width: @screen-sm) {
+    .email-title {font-size: 85%;}
 }
